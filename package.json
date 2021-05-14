@@ -11,6 +11,7 @@
     "migratedown": "knex migrate:down",
     "latest": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
+    "migrate-reup": "knex migrate:down && knex migrate:up && knex seed:run",
     "seed": "knex seed:run",
     "heroku-postbuild": "cd client && npm i && npm run build"
   },
